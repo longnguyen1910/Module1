@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input placeholder="Nhập bán kính hình tròn" id="bankinh">
+<button onclick="tinh()">Tính</button>
+<p id="tinh"></p>
+<script>
+    function tinh(){
+        let r=parseFloat(document.getElementById("bankinh").value);
+        let c=(2*r*3.14).toFixed(2);
+        let s=(r*r*3.14).toFixed(2);
+        document.getElementById('tinh').innerHTML='Chu vi: '+c+'; Diện tích: '+s;
+    }
+</script>
+</body>
+</html>
