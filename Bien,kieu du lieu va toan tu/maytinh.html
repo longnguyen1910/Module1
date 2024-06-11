@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" id="FirstNumber" placeholder="Nhập số thứ 1">
+    <input type="number" id="SecondNumber" placeholder="Nhập số thứ 2">
+    <br> <br>
+    <button onclick="Addition()">Addition(+)</button>
+    <button onclick="Subtraction()">Subtraction(-)</button>
+    <button onclick="Multiplication()">Multiplication(x)</button>
+    <button onclick="Division()">Division(/)</button>
+    <br> <br>
+    <h3 id="Result"></h3>
+<script>
+function Addition(){
+    let FirstNumber=parseInt(document.getElementById("FirstNumber").value);
+    let SecondNumber=parseInt(document.getElementById("SecondNumber").value);
+    let Addition=FirstNumber+SecondNumber;
+    document.getElementById("Result").innerHTML="Result Addition: "+ Addition;
+}
+function Subtraction(){
+    let FirstNumber=parseInt(document.getElementById("FirstNumber").value);
+    let SecondNumber=parseInt(document.getElementById("SecondNumber").value);
+    let Subtraction=FirstNumber-SecondNumber;
+    document.getElementById("Result").innerHTML="Result Subtraction: "+ Subtraction;
+}
+function Multiplication(){
+    let FirstNumber=parseInt(document.getElementById("FirstNumber").value);
+    let SecondNumber=parseInt(document.getElementById("SecondNumber").value);
+    let Multiplication=FirstNumber*SecondNumber;
+    document.getElementById("Result").innerHTML="Result Multiplication: "+ Multiplication;
+}
+function Division(){
+    let FirstNumber=parseInt(document.getElementById("FirstNumber").value);
+    let SecondNumber=parseInt(document.getElementById("SecondNumber").value);
+    let Division=FirstNumber/SecondNumber;
+    document.getElementById("Result").innerHTML="Result Division: "+ Division;
+}
+</script>
+
+</body>
+</html>
