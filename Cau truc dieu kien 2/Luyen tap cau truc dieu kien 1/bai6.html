@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="money" placeholder="Nhập doanh số bán hàng(tr)" >
+<button onclick="getfee()">Hoa hồng nhận được</button>
+<p id="fee"></p>
+<script>
+
+    function getfee() {
+        let money = parseFloat(document.getElementById("money").value);
+        let fee;
+        if (money <= 1) {
+            fee = money * 2 /100;
+            document.getElementById("fee").innerHTML = "Hoa hồng nhận được là: " + fee + " triệu đồng";
+        } else if (money <= 3) {
+            fee = money * 5 /100;
+            document.getElementById("fee").innerHTML = "Hoa hồng nhận được là: " + fee + " triệu đồng";
+        } else if (money <= 5) {
+            fee = money * 10 /100;
+            document.getElementById("fee").innerHTML = "Hoa hồng nhận được là: " + fee + " triệu đồng";
+
+        } else {
+            fee = money * 15 /100;
+            document.getElementById("fee").innerHTML = "Hoa hồng nhận được là: " + fee + " triệu đồng";
+
+        }
+    }
+</script>
+</body>
+</html>

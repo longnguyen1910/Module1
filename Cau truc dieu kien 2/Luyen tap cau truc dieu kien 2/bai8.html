@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let age = prompt("Nhập tuổi của 1 người: ");
+    //dùng number.isInteger(age) để kiểm tra là số nguyên
+    let int = parseInt(age) - age;
+    if (age > 0 && age < 120 && int === 0) {
+        alert('Đây là tuổi của 1 người')
+    } else {
+        alert('Đây k phải là tuổi của 1 người')
+    }
+
+</script>
+</body>
+</html>

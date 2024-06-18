@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let firstNum = parseInt(prompt("Nhap so thu 1: "));
+    let secondNum = parseInt(prompt("Nhap so thu 2: "));
+    let thirdNum = parseInt(prompt("Nhap so thu 3: "));
+    let max = firstNum;
+    if (secondNum >= max) {
+        max = secondNum;
+        if (thirdNum >= max) {
+            max = thirdNum;
+        }
+    }
+    document.write("so lon nhat la: " + max);
+</script>
+</body>
+</html>

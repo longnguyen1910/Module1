@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           let run; 
+            while (isNaN(run)) {
+            let UserInputTemperature = +prompt("Please input the Room Temperature: ");
+            let OverHeatTemperature = 100;
+            let LowHeatTemperature = 20;
+            if (UserInputTemperature > OverHeatTemperature) {
+                alert("Please cool down!!");
+            } else if (UserInputTemperature < LowHeatTemperature) {
+                alert("Please raise up temp!!");
+            }else{
+                alert("Room Temperature Now: "+ UserInputTemperature)
+            }
+            let askForStop = prompt("Do you want to stop [y/n] ?");
+            if (askForStop === "Y" || askForStop === "y") {
+            run = false;
+            break;
+        }
+    }
+    </script>
+</body>
+</html>

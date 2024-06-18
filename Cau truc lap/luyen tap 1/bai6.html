@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Number=0;
+        let CountNumIsDivisibleTo7=0;
+        let Sum=0;
+        let LimitedNum=30;
+        while(CountNumIsDivisibleTo7<LimitedNum){
+            let NumIsDivisibleTo7 = Number%7 ===0;
+            if(NumIsDivisibleTo7){
+                console.log('Số tự nhiên chia hết cho 7 là: '+Number);
+                Sum+=Number;
+                CountNumIsDivisibleTo7++
+            }
+            Number++;
+            
+        }
+        console.log('Tổng 30 số tự nhiên đâu tiên chia hết cho 7 là: '+Sum);
+
+           
+           
+
+
+    </script>
+</body>
+</html>

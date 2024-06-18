@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemKT = parseFloat(prompt('Nhập điểm kiểm tra: '));
+    let diemGK = parseFloat(prompt('Nhập điểm thi giữa kì: '));
+    let diemCK = parseFloat(prompt('Nhập điểm thi cuối kì: '));
+    let diemTB = (diemCK + diemGK + diemKT) / 3;
+    if (diemTB >= 9) {
+        alert('Học lực xuất sắc')
+    } else if (diemTB >= 8.5) {
+        alert('Học lực giỏi')
+    } else if (diemTB >= 7) {
+        alert('Học lực khá')
+    } else if (diemTB >= 6) {
+        alert('Học lực yếu')
+    } else {
+        alert('Học lực trung bình')
+    }
+
+</script>
+</body>
+</html>
